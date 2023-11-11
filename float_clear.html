@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container{
+            width: 900px;
+            border: 5px solid purple;
+            margin: 33px auto;
+            background-color: rgb(249, 177, 114);
+
+        }
+        .items{
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgba(238, 0, 210, 0.399);
+
+        }
+        #fruit{
+            float: left;
+            width:48%;
+        }
+        #Computer{
+            float: right;
+            width:48%;
+        }
+        #Stationary{
+            /* float: left; */
+            /* clear:left; */
+            clear: both;
+            width:100%;
+        }
+        p,h3{
+            text-align: justify;
+        }
+        h1{
+            margin: 23px auto;
+            width: 445px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus vero at officia omnis ea iste libero, aliquam nihil tempore provident esse optio illo culpa placeat ipsam, reiciendis autem dolorum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate saepe ducimus fugit aliquid dolor, dignissimos tempora minus velit deleniti nihil impedit neque illum nemo earum minima consequuntur id similique harum?</p>
+        </div>
+
+        <div id="Computer" class="items">
+            <h3>Computer</h3>
+            <p id="Computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam natus possimus magnam? Optio saepe corrupti magnam. Optio quisquam dolor dolores veniam, velit quaerat libero voluptas delectus temporibus dolorem non sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi aliquid consectetur ullam id consequatur ipsam magnam, ipsum fugiat quaerat vero, unde voluptas aut labore minus pariatur culpa sit assumenda.</p>
+        </div>
+
+        <div id="Stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="Stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, beatae provident ipsum sapiente aliquid quis, error quasi quo ex vel illum odio cum ea recusandae debitis totam eos dolore veniam?</p>
+        </div>
+        <div id="glass" class="items">
+            <h3>Glass</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, beatae provident ipsum sapiente aliquid quis, error quasi quo ex vel illum odio cum ea recusandae debitis totam eos dolore veniam?</p>
+        </div>
+    </div>
+     
+</body>
+</html>
