@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selector</title>
+    <style>
+        h1{
+            background-color: antiquewhite;
+            color: black;
+            font-weight: bolder;
+            text-align: center;
+        }
+        /* div p{
+            color: blue;
+            background-color: lightcoral;
+            font-weight: bold;
+        } */
+        /* div li p{
+            color: blue;
+            background-color: lightcoral;
+            font-weight: bold;
+        } */
+        /* div > p{
+            color: blue;
+            background-color: lightcoral;
+            font-weight: bold;
+        } */
+        div + p{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>More on css selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+                <p>this is a para iinside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>
