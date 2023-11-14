@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After Pseudo Selector</title>
+    <style>
+        section{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 344px;
+            justify-content: center;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+        /* section::before{
+            content: "this is a before content"
+        }
+        section::after{
+            content: "this is a after content"
+        } */
+        .navigation{
+            font-size: 24px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+        }
+        header::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('/html/unsplash.jpg') no-repeat center/cover;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        body{
+            background: url('/html/unsplash.jpg') no-repeat center/cover;
+            /* background-repeat: no-repeat center/cover; */
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to Coding World!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam amet libero itaque tempora voluptatum minus rem. Sed quo sapiente placeat, et itaque, tempore, id impedit odit natus optio aspernatur magnam. Atque commodi quidem fuga placeat asperiores, recusandae illum esse fugit reprehenderit repudiandae omnis accusantium.</p>
+        </section>
+        <!-- <hr> -->
+</body>
+</html>
