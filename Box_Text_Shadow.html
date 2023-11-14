@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: azure;
+            /* box-shadow: 5px 4px yellowgreen; */
+            /* box-shadow: -5px -4px yellowgreen; */
+            box-shadow: 5px 4px 4px yellowgreen;
+            /* box-shadow: -5px -4px 4px yellowgreen; */
+            /* box-shadow: -5px -4px 4px 8px yellowgreen; */
+            /* box-shadow: -5px -4px 4px 8px rgba(2,4,5,0.8); */
+            /* box-shadow:inset 44px 78px yellowgreen;  */
+            /* box-shadow: 5px 4px yellowgreen,4px 22px red; */
+
+        }
+        .card h2{
+            /* text-shadow: 8px 5px rgb(252, 252, 252); */
+            text-shadow: 3px 5px 3px rgb(30, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>This is my Card 1 which has random text</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad explicabo iure ducimus, nesciunt quisquam, veniam qui consectetur voluptatem fugiat labore nisi culpa dignissimos beatae a hic excepturi voluptas, nulla eius? Voluptas laudantium quasi exercitationem?</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is not my card. this is someone's else card.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt laboriosam ullam quod suscipit, amet blanditiis placeat a consectetur quos. Non reiciendis harum iusto labore ab, nesciunt dolorem atque! Nisi maxime similique officiis perferendis nemo!</p>
+        </div>
+        <div class="card" id="car-3">
+           <h2> card 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt laboriosam ullam quod suscipit, amet blanditiis placeat a consectetur quos. Non reiciendis harum iusto labore ab, nesciunt dolorem atque! Nisi maxime similique officiis perferendis nemo!</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
