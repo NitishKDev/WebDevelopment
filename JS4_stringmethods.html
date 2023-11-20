@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js string functions</title>
+</head>
+<body>
+    <h1>welcome to string functions in js</h1>
+    <script>
+        var str="this is a string";
+        console.log(str);
+        var post=str.indexOf('s');
+        console.log(`position of "is" in "${str}" is ${post}`);
+        post=str.lastIndexOf('s');
+        console.log(`position of "is" in "${str}" is ${post}`);
+        var s=str.slice(0,3);
+        console.log(s);
+        s=str.substring(0,3);
+        console.log(s);
+        s=str.substr(0,3);
+        console.log(s);
+        var repla=str.replace('a','isss');
+        console.log(str);
+        console.log(repla);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var newst=str.concat('naya string');
+        console.log(str);
+        console.log(newst);
+        var str1="    rrr  ffe r   rr         rr       ";
+        console.log(str1);
+        console.log(str1.trim());
+        var chr2=str.charAt(2);
+        console.log(chr2);
+        var chr2=str.charCodeAt(2);
+        console.log(chr2);
+        console.log(str[1]);
+    </script>
+</body>
+</html>
