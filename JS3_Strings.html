@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1> this is heading for strings in js</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusamus quis doloremque eaque quibusdam maxime odit nemo, officiis placeat dolor inventore maiores distinctio? Sit doloribus incidunt sint non veritatis nemo amet sapiente, perferendis nisi reprehenderit, veniam animi aliquam saepe ratione. Quasi at aliquid sint!</p>
+    </div>
+    <script>
+        var strn="hello ";
+        var nam="jack ";
+        var greet="good night";
+        var msg="nice to meet u!";
+        console.log(strn+nam+msg);
+        var tmp=`hello ${greet} boy ${nam} yo`;
+        console.log(tmp);
+        var l=nam.length;
+        console.log(`length of ${nam} is ${l}`);
+        console.log("hello\n world");
+        document.getElementById('content').innerHTML='<h3>this is inner html by js</h3>'
+    </script>
+</body>
+</html>
