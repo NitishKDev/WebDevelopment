@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loopst</title>
+</head>
+<body>
+    <div class="container">
+        loops in js
+    </div>
+    <script>
+        console.log("Loooopssss");
+        let i;
+        for(i=1;i<4;i++)
+        {
+            console.log(i);
+        }
+        //loops to iterate over array elements
+
+        //for loop
+        let frnds=['jack','picolo','goku','vegita','trunks'];
+         for (let index = 0; index < frnds.length; index++) 
+            {
+            console.log("hello "+frnds[index]);
+            }
+
+            //for each
+        frnds.forEach(function ff(ele){
+            console.log("good "+ele);
+        });
+
+        //for of loop
+        for(eel of frnds)
+        {
+          console.log("byee "+eel);  
+        }
+
+
+
+        //loop to iterate on object
+        let emp={
+            name:"jack",
+            sal:2,
+            colo:"try"
+        }
+        //for in loop
+        for(key in emp)
+        {
+            console.log(`The ${key} of employee is ${emp[key]}`);
+        }
+
+        //while loop
+        let ei=8;
+        while(ei<12)
+        {
+            console.log(`${ei} is less than 12`);
+            ei++;
+        }
+
+        //do while loop
+        let eiw=28;
+        do
+        {
+            console.log(`${eiw} is less than 12 in do while loop`);
+            eiw++;
+        }while(ei<12);
+    </script>
+</body>
+</html>
