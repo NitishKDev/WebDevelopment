@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS12 SetTimeOut ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+      Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("yo welcome");
+        // function greet(){
+        //     console.log("good morning");
+        // }
+        // // greet();
+        // setTimeout(greet,4000);
+
+
+
+        // function greet(name){
+        //     console.log(name+" ,good morning");
+        // }
+        // // greet();
+        // setTimeout(greet,4000,"jack");
+
+
+
+        //  function greet(name,byetext){
+        //      console.log(name+" ,good morning "+byetext);
+        //  }
+        // // greet();
+        // time=setTimeout(greet,4000,"jack","takecare");
+        // clearTimeout(time);
+
+
+        function greet(name,byetext){
+             console.log(name+" ,good morning "+byetext);
+         }
+        setInterval(greet,2000,"jack","takecare");
+
+    //    intrval= setInterval(greet,2000,"jack","takecare");
+    //    clearInterval(intrval);
+
+
+    function displaytime(){
+        time=new Date();
+        //console.log(time);
+        document.getElementById('time').innerHTML=time;
+    }
+    setInterval(displaytime,1000);
+    </script>
+</body>
+</html>
