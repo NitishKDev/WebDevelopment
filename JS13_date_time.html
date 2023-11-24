@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<style>
+    .container{
+        font-size: 27px;
+        background-color: antiquewhite;
+        border: 2px solid red;
+        padding: 33px;
+        margin: 5px;
+        text-align: center;
+    }
+    #idd{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        Current time is <span id="idd"></span>
+    </div>
+    <script>
+        console.log("date and time");
+        let now=new Date();
+        // console.log(typeof(now));
+        console.log(now);
+
+        let dt=new Date(0);//reference for date.pass seconds in constructor.
+        console.log(dt);
+
+        let nedate=new Date("2024-8-23");
+        console.log(nedate);
+
+        let nedate1=new Date(2023,11,10,4,44,22);//year,month,date,minute,second,millisecond..year strt from 0 to 11.
+        console.log(nedate1);
+        let yr=nedate1.getFullYear();
+        console.log("the yaer is ",yr);
+        let dte=nedate1.getDate();
+        console.log("the date is ",dte);
+        let mnth=nedate1.getMonth();
+        console.log("the month is ",mnth);
+        let hrr=nedate1.getHours();
+        console.log("the hours is ",hrr);
+
+        nedate1.setDate(22);
+        console.log(nedate1);
+        nedate1.setHours(22);
+        console.log(nedate1);
+        console.log(Date.now());//from 1970 ..gives milliseconds
+
+        setInterval(upadatetime,1000);
+        function upadatetime()
+        {
+            idd.innerHTML=new Date();
+        }
+    </script>
+</body>
+</html>
