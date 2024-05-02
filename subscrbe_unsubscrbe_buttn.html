@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe amazon calculator</title>
+    <style>
+        button{
+            width: 133px;
+            height: 33px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>Youtube subscribe button</h3>
+    <button>Subscribe</button>
+    <script>
+        let clk=0;
+        document.querySelector("button").addEventListener("click",function1);
+        function function1(){
+            clk = clk+1;
+            if(clk % 2 != 0){
+                document.querySelector("button").innerHTML = "Subscribed";
+            }
+            else{
+                document.querySelector("button").innerHTML = "Subscribe";
+            }
+            
+        }
+    </script>
+</body>
+</html>
