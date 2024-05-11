@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Effect</title>
+    <style>
+        .bulbc{
+            background-color: yellow;
+        }
+        #b{
+            height: 354px;
+            width: 30%;
+            border-radius: 50%;
+            border:3px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bulb Effect</h1>
+    <div class="bulbc" id="b">
+    </div>
+    <script>
+        setInterval(async function(){
+            document.querySelector("#b").classList.toggle("bulbc");
+        },300)
+    </script>
+</body>
+</html>
